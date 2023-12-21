@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size:50px;
+    margin-top: 1rem;
+    color: #3363ff;
+}
+
+button{
+    margin-left: 45%;
+}
+
+.box-book{
+    margin-top: 20px;
+    padding: 50px;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    border: 2px solid #b102b7;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px #fd004c,
+    10px 8px 20px #fd004c,
+    10px 5px 30px #fff020,
+    10px 11px 20px #3363ff,
+    10px 20px 20px #fd004c;
+    transition: all 1s;
+}
+
+.box-table
+{
+width: 80%;
+}
+
+
+
+.box-book::before{
+    content: "";
+    position: absolute;
+     width: 450px;
+    height: 400px;
+    top: 0;
+    right:0;
+    transform: skewX(-25deg);
+    background: linear-gradient(#041025,
+    #fd004c);
+    z-index: -213123;
+    transition: all 1s;
+}
+
+.box-book:hover::before{
+    width: 100%;
+    height: 100%;
+    transform: skew(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-layer{
+    background-image: url("../img/6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #041025;
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    bottom: 5%;
+    left: 38.5%;
+}
+
+#shape{
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/1.png");
+    background-position: center;
+    background-size: cover;
+    z-index: -1212;
+}
